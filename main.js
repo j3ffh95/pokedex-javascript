@@ -2,14 +2,14 @@ const poke_container = document.querySelector("#poke_container");
 const pokemons_number = 150;
 
 const colors = {
-  fire: "#FDDFDF",
+  fire: "#e77a4a",
   grass: "#DEFDE0",
   electric: "#FCF7DE",
   water: "#DEF3FD",
   ground: "#f4e7da",
   rock: "#d5d5d4",
   fairy: "#fceaff",
-  poison: "#98d7a5",
+  poison: "#8d8393",
   bug: "#f8d5a3",
   dragon: "#97b3e6",
   psychic: "#eaeda1",
@@ -43,6 +43,9 @@ function createPokemonCard(pokemon) {
   const type = main_types.find((type) => poke_types.indexOf(type) > -1);
 
   const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
+  const color = colors[type];
+
+  pokemonEl.style.backgroundColor = color;
 
   const pokeInnerHTML = `
     <div class="img-container">
