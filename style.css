@@ -1,1 +1,17 @@
 @import url("https://fonts.googleapis.com/css?familyLato:300,400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #efefbb;
+  background: -webkit-linear-gradient(to right, #d4d3dd, #efefbb);
+  background: linear-gradient(to right, #d4d3dd, #efefbb);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lato";
+  margin: 0;
+}
