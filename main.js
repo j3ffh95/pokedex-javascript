@@ -45,7 +45,7 @@ function createPokemonCard(pokemon) {
   const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
 
   const pokeInnerHTML = `
-    <div>
+    <div class="img-container">
     <img src="https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png" />
     </div>
     <div class="info">
